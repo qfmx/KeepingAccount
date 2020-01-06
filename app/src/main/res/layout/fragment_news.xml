@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2019 xuexiangjys(xuexiangjys@163.com)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        style="@style/RoundButton.Auto"
+        android:layout_marginTop="20dp"
+        android:width="220dp"
+        android:textColor="#000"
+        android:layout_marginLeft="80dp"
+        android:text="默认圆角大小" />
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        style="@style/RoundButton.Auto"
+        android:layout_marginTop="20dp"
+        android:text="自定义样式"
+        android:textColor="@color/xui_config_color_60_pure_black"
+        />
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        style="@style/RoundButton.Auto"
+        android:layout_marginTop="20dp"
+        android:text="自定义样式"
+        android:textColor="@color/xui_config_color_60_pure_black"
+        />
+
+    <com.xuexiang.xui.widget.edittext.PasswordEditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:textAlignment="viewStart"
+            />
+
+    <com.xuexiang.xui.widget.edittext.PasswordEditText
+        android:id="@+id/input_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start"
+        android:hint="重复密码"
+        android:inputType="textPassword"
+        android:textAlignment="viewStart"
+        />
+</LinearLayout>
