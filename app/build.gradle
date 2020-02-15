@@ -8,8 +8,8 @@ if (isNeedPackage.toBoolean()) {
 }
 
 android {
-    compileSdkVersion build_versions.target_sdk
-    buildToolsVersion build_versions.build_tools
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "cn.allms.familyaccount"
@@ -82,8 +82,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility "1.8"
+        targetCompatibility "1.8"
     }
 }
 
@@ -97,7 +97,7 @@ dependencies {
     //XUI框架
     implementation 'com.github.xuexiangjys:XUI:1.1.1'
     implementation deps.androidx.appcompat
-    implementation deps.androidx.recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-beta01'
     implementation deps.androidx.design
     implementation deps.glide
 
@@ -127,8 +127,8 @@ dependencies {
     implementation 'com.github.xuexiangjys.XPage:xpage-lib:2.2.9'
     annotationProcessor 'com.github.xuexiangjys.XPage:xpage-compiler:2.2.9'
     //页面路由
-    implementation 'com.github.xuexiangjys.XRouter:xrouter-runtime:1.0.1'
-    annotationProcessor 'com.github.xuexiangjys.XRouter:xrouter-compiler:1.0.1'
+    implementation 'com.github.xuexiangjys.XRouter:xrouter-runtime:1.0.0'
+    annotationProcessor 'com.github.xuexiangjys.XRouter:xrouter-compiler:1.0.0'
     //ButterKnife的sdk
     implementation deps.butterknife.runtime
     annotationProcessor deps.butterknife.compiler
